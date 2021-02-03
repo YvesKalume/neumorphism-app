@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    tools:context=".MainActivity">
+
+    <soup.neumorphism.NeumorphImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        style="@style/Widget.Neumorph.CardView"
+        app:neumorph_backgroundColor="#EAEAEA"
+        app:neumorph_shapeType="flat"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearanceCircle"
+        app:neumorph_shadowElevation="6dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_search"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_inset="12dp"
+        app:neumorph_insetStart="12dp"
+        app:neumorph_insetEnd="12dp"
+        app:neumorph_insetTop="12dp"
+        app:neumorph_insetBottom="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:neumorph_shadowElevation="6dp"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearanceCircle"
+        app:neumorph_shapeType="flat">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/album" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:text="Lefa"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/neumorphCardView2"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView2"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        app:neumorph_inset="12dp"
+        app:neumorph_insetStart="12dp"
+        app:neumorph_insetEnd="12dp"
+        app:neumorph_insetTop="12dp"
+        app:neumorph_insetBottom="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView"
+        app:neumorph_shadowElevation="6dp"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+        app:neumorph_shapeType="flat">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="100dp"
+            android:background="#9F9F9F" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/neumorphCardView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:neumorph_shapeType="flat"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearanceCircle"
+        app:neumorph_shadowElevation="6dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_previous"
+        app:neumorph_inset="12dp"
+        app:neumorph_insetStart="12dp"
+        app:neumorph_insetEnd="12dp"
+        app:neumorph_insetTop="12dp"
+        app:neumorph_insetBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/neumorphImageButton"
+        app:layout_constraintStart_toStartOf="@+id/neumorphCardView2"
+        app:layout_constraintTop_toTopOf="@+id/neumorphImageButton" />
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/neumorphImageButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_pause"
+        app:neumorph_inset="12dp"
+        app:neumorph_insetStart="12dp"
+        app:neumorph_insetEnd="12dp"
+        app:neumorph_insetTop="12dp"
+        app:neumorph_insetBottom="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/neumorphCardView2"
+        app:layout_constraintStart_toStartOf="@+id/neumorphCardView2"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView2"
+        app:neumorph_shadowElevation="6dp"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearanceCircle"
+        app:neumorph_shapeType="basin" />
+
+    <soup.neumorphism.NeumorphImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="16dp"
+        app:neumorph_shapeType="flat"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearanceCircle"
+        app:neumorph_shadowElevation="6dp"
+        android:src="@drawable/ic_skip"
+        app:neumorph_inset="12dp"
+        app:neumorph_insetStart="12dp"
+        app:neumorph_insetEnd="12dp"
+        app:neumorph_insetTop="12dp"
+        app:neumorph_insetBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/neumorphImageButton"
+        app:layout_constraintEnd_toEndOf="@+id/neumorphCardView2"
+        app:layout_constraintTop_toTopOf="@+id/neumorphImageButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
